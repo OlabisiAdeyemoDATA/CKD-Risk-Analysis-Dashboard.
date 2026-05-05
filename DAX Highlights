@@ -1,0 +1,13 @@
+To achieve the static benchmarking and specific trend lines, I implemented custom DAX measures:
+
+High Risk Count (Static Baseline):
+High Risk Count = 
+CALCULATE(
+    [Total Patients], 
+    ALL('ckd dataset'),
+    'ckd dataset'[Class] = "positive", 
+    'ckd dataset'[Stage] IN {"Stage 4", "Stage 5"}
+) + 0
+
+High Risk Trend (Filtered Sparkline):
+Used to visualize the distribution of severe cases across specific age demographics (50, 60, 70, 80) while maintaining a unique trend shape.
