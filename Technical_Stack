@@ -1,1 +1,5 @@
+Tool: Power BI Desktop
 
+Data Modeling: Star Schema (Patient Data, Metrics, Reference Tables)
+
+Visuals: Custom Chiclet Slicers, Sparklines, Donut Charts, and Heat Maps.
